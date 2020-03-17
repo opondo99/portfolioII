@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mark Opondo's portfolio projects</title>
+        <meta name="description" content="This is a page with a list of projects done by Mark Opondo who is a Software Developer / Web Developer in Nairobi Kenya">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/pages/projects/projects.css">
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div class="slide active">
+            <div class="card">
+                <div class="card-img" id="img1"></div>
+                <div class="card-content">
+                    <div class="card-theme">Project 1</div>
+                    <div class="card-header">Someones brochure</div>
+                    <p class="card-para">
+                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt nesciunt, delectus earum inventore minima odio molestias molestiae at iure, doloremque voluptatem necessitatibus fuga aspernatur amet quibusdam facilis odit optio.
+                    </p>
+                    <a class="card-link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <div class="card-img" id="img2"></div>
+                <div class="card-content">
+                    <div class="card-theme">Project 1</div>
+                    <div class="card-header">Someones brochure</div>
+                    <p class="card-para">
+                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt nesciunt, delectus earum inventore minima odio molestias molestiae at iure, doloremque voluptatem necessitatibus fuga aspernatur amet quibusdam facilis odit optio.
+                    </p>
+                    <a class="card-link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <div class="card-img" id="img3"></div>
+                <div class="card-content">
+                    <div class="card-theme">Project 1</div>
+                    <div class="card-header">Someones brochure</div>
+                    <p class="card-para">
+                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt nesciunt, delectus earum inventore minima odio molestias molestiae at iure, doloremque voluptatem necessitatibus fuga aspernatur amet quibusdam facilis odit optio.
+                    </p>
+                    <a class="card-link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <div class="card-img" id="img4"></div>
+                <div class="card-content">
+                    <div class="card-theme">Project 1</div>
+                    <div class="card-header">Someones brochure</div>
+                    <p class="card-para">
+                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt nesciunt, delectus earum inventore minima odio molestias molestiae at iure, doloremque voluptatem necessitatibus fuga aspernatur amet quibusdam facilis odit optio.
+                    </p>
+                    <a class="card-link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <div class="card-img" id="img5"></div>
+                <div class="card-content">
+                    <div class="card-theme">Project 1</div>
+                    <div class="card-header">Someones brochure</div>
+                    <p class="card-para">
+                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt nesciunt, delectus earum inventore minima odio molestias molestiae at iure, doloremque voluptatem necessitatibus fuga aspernatur amet quibusdam facilis odit optio.
+                    </p>
+                    <a class="card-link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <div class="card-img" id="img6"></div>
+                <div class="card-content">
+                    <div class="card-theme">Project 1</div>
+                    <div class="card-header">Someones brochure</div>
+                    <p class="card-para">
+                        project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt nesciunt, delectus earum inventore minima odio molestias molestiae at iure, doloremque voluptatem necessitatibus fuga aspernatur amet quibusdam facilis odit optio.
+                    </p>
+                    <a class="card-link">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="prevnext">
+            <button class="pn-btn" id="prev"></button>
+            <button class="pn-btn" id="next"></button>
+        </div>
+        <!-- <script src="" async defer></script> -->
+
+
+        <script type="text/javascript">
+        
+            var $activeSlide = $('.active'),
+                $homeSlide = $('.slide'),
+                $slideNavPrev = $('#prev'),
+                $slideNavNext = $('#next');
+
+
+            function init() {
+                TweenMax.set($homeSlide.not($activeSlide), {autoAlpha: 0});
+                TweenMax.set($slideNavPrev, {autoAlpha: 0.2})
+            }
+
+            init();
+
+            function goToNextSlide(slideOut, slideIn, slideInAll) {
+                var tl = new TimelineLite(),
+                    slideOutContent = slideOut.find('.card-content'),
+                    slideInContent = slideIn.find('.card-content'),
+                    slideOutImage = slideIn.find('.card-img'),
+                    slideInImage = slideIn.find('.card-img'),
+                    index = slideIn.index(),
+                    size = $homeSlide.length;
+
+
+                if(slideIn.length !== 0) {
+                    tl
+                    .set(slideIn, {autoAlpha:1, className: '+=active'})
+                    .set(slideOut, {className: '-=active'})
+                    .to(slideOutContent, 0.65, {y: '+=40px', ease: Power3.easeInOut}, 0)
+                    .to(slideOutImage, 0.65, {backgroundPosition:'bottom', ease: Power3.easeInOut}, 0)
+                    .to(slideInAll, 1, {y: '-=100%', ease: Power3.easeInOut}, 0)
+                    .fromTo(slideInContent, 0.65, {y: '-=40px'}, {y : 0, ease: Power3.easeInOut}, '-=0.7')
+                    .fromTo(slideInImage, 0.65, {backgroundPosition: 'top'}, {backgroundPosition: 'bottom', ease: Power3.easeInOut}, '-=0.7')
+                }
+
+                TweenMax.set($slideNavPrev, {autoAlpha: 1});
+
+                if(index === size - 1) {
+                    TweenMax.to($slideNavNext, 0.3, {autoAlpha: 0.2, ease: Linear.easeNone });
+                }
+            };
+
+
+            $slideNavNext.click(function(e) {
+                e.preventDefault();
+
+                var slideOut = $('.slide.active'),
+                    slideIn = $('.slide.active').next('.slide'),
+                    slideInAll = $('.slide');
+
+                goToNextSlide(slideOut, slideIn, slideInAll);
+            });
+
+
+            function goToPrevSlide(slideOut, slideIn, slideInAll) {
+                var tl = new TimelineLite(),
+
+                slideOutContent = slideOut.find('.card-content'),
+                slideInContent = slideIn.find('.card-content'),
+                slideOutImage = slideOut.find('.card-img'),
+                slideInImage = slideIn.find('.card-img'),
+                index = slideIn.index(),
+                size = $homeSlide.length;
+
+
+                if(slideIn.length !== 0) {
+                    tl
+                    .set(slideIn, {autoAlpha:1, className: '+=active'})
+                    .set(slideOut, {className: '-=active'})
+                    .to(slideOutContent, 0.65, {y: '-=40px', ease: Power3.easeInOut}, 0)
+                    .to(slideOutImage, 0.65, {backgroundPosition:'top', ease: Power3.easeInOut}, 0)
+                    .to(slideInAll, 1, {y: '+=100%', ease: Power3.easeInOut}, 0)
+                    .fromTo(slideInContent, 0.65, {y: '+=40px'}, {y : 0, ease: Power3.easeInOut}, '-=0.7')
+                    .fromTo(slideInImage, 0.65, {backgroundPosition: 'bottom'}, {backgroundPosition: 'top', ease: Power3.easeInOut}, '-=0.7')
+                }
+
+                TweenMax.set($slideNavNext, {autoAlpha: 1});
+
+                if(index === 0) {
+                    TweenMax.to($slideNavPrev, 0.3, {autoAlpha: 0.2, ease: Linear.easeNone });
+                }
+            };
+
+
+            $slideNavPrev.click(function(e) {
+                e.preventDefault();
+
+                var slideOut = $ ('.slide.active'),
+                    slideIn = $ ('.slide.active').prev('.slide'),
+                    slideInAll = $ ('.slide');
+
+                goToPrevSlide(slideOut, slideIn, slideInAll);
+            });           
+            
+        </script>
+    </body>
+</html>
