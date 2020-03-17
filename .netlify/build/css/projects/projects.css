@@ -188,4 +188,25 @@ body .prevnext #next::after {
           transform: rotate(-90deg);
   background: #88391c;
 }
+
+body .home {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 90%;
+  left: 30px;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body .home img {
+  width: 100%;
+  height: 100%;
+}
+
+body .home:hover {
+  opacity: 1;
+}
 /*# sourceMappingURL=projects.css.map */
