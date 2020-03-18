@@ -296,6 +296,7 @@ html body .footer .socials a {
       -ms-flex-align: start;
           align-items: flex-start;
   min-width: 12vw;
+  text-decoration: none;
 }
 
 html body .footer .socials a img {
