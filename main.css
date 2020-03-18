@@ -47,7 +47,7 @@ html body header {
 
 html body header .profile {
   width: 97.5%;
-  height: 70vh;
+  height: 75vh;
   border-right: orangered 100px solid;
 }
 
@@ -118,7 +118,7 @@ html body header .profile-background {
   background: transparent;
   position: absolute;
   z-index: -1;
-  width: 70vw;
+  border-right: orangered 2px solid;
   padding: 0;
   margin: 0;
   height: 70vh;
@@ -567,6 +567,74 @@ html::-webkit-scrollbar {
   100% {
     bottom: 480px;
     background-position: -12px -400px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  html {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  html body {
+    width: 100vw;
+    overflow-x: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  html body header {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html body header .profile {
+    width: 50%;
+    height: 75vh;
+  }
+  html body header .intro {
+    width: 100vw;
+  }
+  html body header .about {
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  html body header .about p {
+    padding: 0;
+    margin: 0;
+  }
+  html body .footer {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
