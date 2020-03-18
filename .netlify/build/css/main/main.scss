@@ -37,7 +37,7 @@ html {
             .profile {
                 // width: 40vw;
                 width: 97.5%;
-                height: 70vh;
+                height: 75vh;
                 border-right: orangered 100px solid;
                 // height: 50vh;
                 // img {
@@ -109,16 +109,18 @@ html {
                 background: transparent;
                 position: absolute;
                 z-index: -1;
-                width: 70vw;
-                // border-right: orangered 2px solid;
+                // width: 70vw;
+                border-right: orangered 2px solid;
                 padding: 0;
                 margin: 0;
                 height: 70vh;
                 top: 20px;
-                .black-corner {
+                // .black-corner {
     
-                }
+                // }
             }
+
+
             .intro {
                 display: flex;
                 justify-content: space-around;
@@ -417,3 +419,68 @@ html::-webkit-scrollbar { width: 0 !important }
         background-position: -12px -400px;
     }
 }
+
+
+
+@media only screen and (max-width: 860px) {
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        min-height: 100vh;
+
+        body {
+            width: 100vw;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            header {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+
+                .profile {
+                    width: 50%;
+                    height: 75vh;
+                } 
+                
+                .intro {
+                    width: 100vw;
+                    // padding-left: 8vmin;
+                    // margin-right: 0;
+                    // text-align: center;
+                }
+
+
+                .about {
+                    width: 70%;
+                    margin: auto;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+
+                    p {
+                        padding: 0;
+                    margin: 0;
+                    }
+                }
+            }
+
+            .footer {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    }
+}
+
+// @media
