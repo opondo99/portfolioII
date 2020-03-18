@@ -47,27 +47,15 @@ body .slide .card .card-img {
 }
 
 body .slide .card #img1 {
-  background-image: url("/assets/portfolio3.jpg");
+  background-image: url("/assets/zazi.png");
 }
 
 body .slide .card #img2 {
-  background-image: url("/assets/portfolio4.jpg");
+  background-image: url("/assets/big-mark.png");
 }
 
 body .slide .card #img3 {
-  background-image: url("/assets/portfolio3.jpg");
-}
-
-body .slide .card #img4 {
-  background-image: url("/assets/portfolio4.jpg");
-}
-
-body .slide .card #img5 {
-  background-image: url("/assets/portfolio3.jpg");
-}
-
-body .slide .card #img6 {
-  background-image: url("/assets/portfolio4.jpg");
+  background-image: url("/assets/hair-works.png");
 }
 
 body .slide .card .card-content {
