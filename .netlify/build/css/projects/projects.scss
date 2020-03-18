@@ -91,6 +91,8 @@ body {
                     cursor: pointer;
                     opacity: .7;
                     transition: opacity .3s ease;
+                    // list-style: none;
+                    text-decoration: none;
                 }
 
                 .card-link:hover {
