@@ -40,34 +40,23 @@ body .slide .card {
 }
 
 body .slide .card .card-img {
-  background-position: center;
+  background-position: left;
   height: 100%;
   width: 50%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body .slide .card #img1 {
-  background-image: url("../assets/portfolio3.jpg");
+  background-image: url("../assets/Screenshot from 2020-03-18 05-34-17.png");
 }
 
 body .slide .card #img2 {
-  background-image: url("../assets/portfolio4.jpg");
+  background-image: url("../assets/Screenshot from 2020-03-18 02-31-56.png");
 }
 
 body .slide .card #img3 {
-  background-image: url("../assets/portfolio3.jpg");
-}
-
-body .slide .card #img4 {
-  background-image: url("../assets/portfolio4.jpg");
-}
-
-body .slide .card #img5 {
-  background-image: url("../assets/portfolio3.jpg");
-}
-
-body .slide .card #img6 {
-  background-image: url("../assets/portfolio4.jpg");
+  background-image: url("../assets/Screenshot from 2020-03-18 02-10-58.png");
 }
 
 body .slide .card .card-content {
