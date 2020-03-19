@@ -64,7 +64,10 @@ body .slide .card .card-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 50%;
-  background: #000;
+  background: linear-gradient(-45deg, #000, #464646, #504c4c, #2e2828, #331f1f, #3f0303);
+  background-size: 400% 400%;
+  -webkit-animation: change 20s ease-in-out infinite;
+          animation: change 20s ease-in-out infinite;
 }
 
 body .slide .card .card-content .card-theme {
@@ -98,13 +101,15 @@ body .slide .card .card-content .card-link {
   display: block;
   cursor: pointer;
   opacity: .7;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-weight: 700;
   text-decoration: none;
 }
 
 body .slide .card .card-content .card-link:hover {
   opacity: 1;
+  font-size: 2vmin;
 }
 
 body .prevnext {
@@ -183,8 +188,8 @@ body .home {
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;
-  top: 90%;
-  left: 30px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   opacity: .7;
   -webkit-transition: all .3s ease;
@@ -198,5 +203,41 @@ body .home img {
 
 body .home:hover {
   opacity: 1;
+}
+
+@-webkit-keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
 }
 /*# sourceMappingURL=projects.css.map */
