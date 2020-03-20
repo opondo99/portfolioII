@@ -77,7 +77,7 @@ body {
 
                 .card-para {
                     font-weight: 300;
-                    font-size: 1.7vmin;
+                    font-size: 2vmin;
                     line-height: 1.8;
                     margin-bottom: 2.5vmin;
                     color: #fff;
@@ -85,7 +85,7 @@ body {
 
                 .card-link {
                     color: #fff;
-                    font-size: 1.8vmin;
+                    font-size: 2.2vmin;
                     display: block;
                     cursor: pointer;
                     opacity: .7;
@@ -197,5 +197,75 @@ body {
 
     .home:hover {
         opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        // overflow-y: scroll;
+
+        .slide {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 100vh;
+            width: 100vw;
+            // flex-direction: column;
+
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                width: 95vw;
+                margin: auto;
+                padding: 5vh 0 5vh 0;
+                align-items: center;
+                justify-content: space-around;
+
+                .card-img {
+                    width: 50vw;
+                    height: 30vh;
+                    background-size: cover;
+                    background-position: top;
+                    margin: auto;
+                }
+
+                .card-content {
+                    background: transparent;
+                    width: 70%;
+                    margin: auto;
+                    min-height: 70vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card-theme {
+                        color: #000;
+                    }
+
+                    .card-header {
+                        color: black;
+                    }
+
+                    .card-para {
+                        color: #000;
+                        font-size: 2vmin;
+                    }
+
+                    .card-link {
+                        color: #000;
+                        font-size: 2.2vmin;
+                    }
+                }
+            }
+        }
     }
 }
