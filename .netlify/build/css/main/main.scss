@@ -481,11 +481,16 @@ html::-webkit-scrollbar { width: 0 !important }
 
                 .profile {
                     width: 50%;
-                    height: 75vh;
+                    height: 70vh;
+
+                    .pic {
+                        height: 70vh;
+                    }
                 } 
                 
                 .intro {
                     width: 100vw;
+                    margin: 2rem 0 2rem 0;
                     // padding-left: 8vmin;
                     // margin-right: 0;
                     // text-align: center;
@@ -517,4 +522,3 @@ html::-webkit-scrollbar { width: 0 !important }
     }
 }
 
-// @media

@@ -272,6 +272,10 @@ body .home:hover {
         flex-wrap: nowrap;
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(-45deg, #000, #464646, #504c4c, #2e2828, #331f1f, #3f0303);
+    background-size: 400% 400%;
+    -webkit-animation: change 20s ease-in-out infinite;
+            animation: change 20s ease-in-out infinite;
   }
   body .slide .card {
     display: -webkit-box;
@@ -290,6 +294,7 @@ body .home:hover {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    background: transparent;
   }
   body .slide .card .card-img {
     width: 30vw;
@@ -313,20 +318,25 @@ body .home:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   body .slide .card .card-content .card-theme {
-    color: #000;
+    min-width: 100vw;
+    text-align: center;
   }
   body .slide .card .card-content .card-header {
-    color: black;
+    min-width: 80vw;
+    text-align: center;
   }
   body .slide .card .card-content .card-para {
-    color: #000;
-    font-size: 2vmin;
+    min-width: 80vw;
+    text-align: center;
   }
   body .slide .card .card-content .card-link {
-    color: #000;
-    font-size: 2.2vmin;
+    min-width: 80vw;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=projects.css.map */

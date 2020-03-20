@@ -656,10 +656,14 @@ html::-webkit-scrollbar {
   }
   html body header .profile {
     width: 50%;
-    height: 75vh;
+    height: 70vh;
+  }
+  html body header .profile .pic {
+    height: 70vh;
   }
   html body header .intro {
     width: 100vw;
+    margin: 2rem 0 2rem 0;
   }
   html body header .about {
     width: 70%;
