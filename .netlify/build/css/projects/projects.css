@@ -89,7 +89,7 @@ body .slide .card .card-content .card-header {
 
 body .slide .card .card-content .card-para {
   font-weight: 300;
-  font-size: 1.7vmin;
+  font-size: 2vmin;
   line-height: 1.8;
   margin-bottom: 2.5vmin;
   color: #fff;
@@ -97,7 +97,7 @@ body .slide .card .card-content .card-para {
 
 body .slide .card .card-content .card-link {
   color: #fff;
-  font-size: 1.8vmin;
+  font-size: 2.2vmin;
   display: block;
   cursor: pointer;
   opacity: .7;
@@ -238,6 +238,95 @@ body .home:hover {
   }
   100% {
     background-position: 50% 0;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+  }
+  body .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 100vh;
+    width: 100vw;
+  }
+  body .slide .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 95vw;
+    margin: auto;
+    padding: 5vh 0 5vh 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .slide .card .card-img {
+    width: 30vw;
+    height: 25vh;
+    background-size: cover;
+    background-position: top;
+    margin: auto;
+  }
+  body .slide .card .card-content {
+    background: transparent;
+    width: 70%;
+    margin: auto;
+    min-height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .slide .card .card-content .card-theme {
+    color: #000;
+  }
+  body .slide .card .card-content .card-header {
+    color: black;
+  }
+  body .slide .card .card-content .card-para {
+    color: #000;
+    font-size: 2vmin;
+  }
+  body .slide .card .card-content .card-link {
+    color: #000;
+    font-size: 2.2vmin;
   }
 }
 /*# sourceMappingURL=projects.css.map */
