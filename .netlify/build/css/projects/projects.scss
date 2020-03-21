@@ -188,7 +188,7 @@ body {
     .home {
         width: 1.5rem;
         height: 1.5rem;
-        position: absolute;
+        position: fixed;
         // bottom: 20%;
         top: 20px;
         right: 20px;
@@ -221,42 +221,52 @@ body {
     background-position: 50% 100%;  
     }
     100%{
-    background-position: 50% 0; 
+    background-position: 50% 50%; 
     } 
 }
 
 @media only screen and (max-width: 860px) {
     body {
+
+        .prevnext {
+            display: none;
+        }
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         min-height: 100vh;
-        // overflow-y: scroll;
+        overflow-y: scroll;
+        background: linear-gradient(-45deg,#000, rgb(70, 70, 70), rgb(80, 76, 76), rgb(46, 40, 40), rgb(51, 31, 31), rgb(63, 3, 3));
+        background-size: 1000% 1000%;
+        animation: change 20s ease-in-out infinite;
+
 
         .slide {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: nowrap;
-            height: 100vh;
+            // height: 110vh;
             width: 100vw;
-            background: linear-gradient(-45deg,#000, rgb(70, 70, 70), rgb(80, 76, 76), rgb(46, 40, 40), rgb(51, 31, 31), rgb(63, 3, 3));
-            background-size: 400% 400%;
-            animation: change 20s ease-in-out infinite;
-            // flex-direction: column;
+            visibility: visible !important;
+            opacity: 1 !important;
+            flex-direction: column;
 
 
             .card {
                 display: flex;
                 flex-direction: column;
-                height: 100vh;
+                min-height: 90vh;
                 width: 95vw;
                 margin: auto;
                 padding: 5vh 0 5vh 0;
                 align-items: center;
                 justify-content: space-around;
                 background: transparent;
+                // margin: 2rem 0;
+                border-bottom: 1px solid black;
 
 
                 .card-img {
@@ -271,7 +281,7 @@ body {
                     background: transparent;
                     width: 70%;
                     margin: auto;
-                    min-height: 70vh;
+                    height: 50vh;
                     display: flex;
                     flex-direction: column;
                     align-items: center;

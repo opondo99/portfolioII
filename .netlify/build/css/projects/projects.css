@@ -187,7 +187,7 @@ body .prevnext #next::after {
 body .home {
   width: 1.5rem;
   height: 1.5rem;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   cursor: pointer;
@@ -219,7 +219,7 @@ body .home:hover {
     background-position: 50% 100%;
   }
   100% {
-    background-position: 50% 0;
+    background-position: 50% 50%;
   }
 }
 
@@ -237,7 +237,7 @@ body .home:hover {
     background-position: 50% 100%;
   }
   100% {
-    background-position: 50% 0;
+    background-position: 50% 50%;
   }
 }
 
@@ -257,6 +257,14 @@ body .home:hover {
         -ms-flex-align: center;
             align-items: center;
     min-height: 100vh;
+    overflow-y: scroll;
+    background: linear-gradient(-45deg, #000, #464646, #504c4c, #2e2828, #331f1f, #3f0303);
+    background-size: 1000% 1000%;
+    -webkit-animation: change 20s ease-in-out infinite;
+            animation: change 20s ease-in-out infinite;
+  }
+  body .prevnext {
+    display: none;
   }
   body .slide {
     display: -webkit-box;
@@ -270,12 +278,13 @@ body .home:hover {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    height: 100vh;
     width: 100vw;
-    background: linear-gradient(-45deg, #000, #464646, #504c4c, #2e2828, #331f1f, #3f0303);
-    background-size: 400% 400%;
-    -webkit-animation: change 20s ease-in-out infinite;
-            animation: change 20s ease-in-out infinite;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body .slide .card {
     display: -webkit-box;
@@ -285,7 +294,7 @@ body .home:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
+    min-height: 90vh;
     width: 95vw;
     margin: auto;
     padding: 5vh 0 5vh 0;
@@ -295,6 +304,7 @@ body .home:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: transparent;
+    border-bottom: 1px solid black;
   }
   body .slide .card .card-img {
     width: 30vw;
@@ -307,7 +317,7 @@ body .home:hover {
     background: transparent;
     width: 70%;
     margin: auto;
-    min-height: 70vh;
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
