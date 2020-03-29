@@ -30,6 +30,7 @@ body {
                 height: 100%;
                 width: 50%;
                 background-size: cover;
+                
                 background-repeat: no-repeat;
             }
 
@@ -43,9 +44,10 @@ body {
             #img3 {
                 background-image: url('../assets/hair-works.png');
             }
-            // #img4 {
-            //     background-image: url('/assets/portfolio4.jpg');
-            // }
+            #img4 {
+                background-image: url('../assets/artista.png');
+                background-position: center;
+            }
             // #img5 {
             //     background-image: url('/assets/portfolio3.jpg');
             // }

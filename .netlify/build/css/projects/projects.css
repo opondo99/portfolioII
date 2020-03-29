@@ -59,6 +59,11 @@ body .slide .card #img3 {
   background-image: url("../assets/hair-works.png");
 }
 
+body .slide .card #img4 {
+  background-image: url("../assets/artista.png");
+  background-position: center;
+}
+
 body .slide .card .card-content {
   padding: 10% 5%;
   -webkit-box-sizing: border-box;
